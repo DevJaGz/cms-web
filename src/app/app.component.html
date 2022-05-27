@@ -1,5 +1,5 @@
-<app-navbar></app-navbar>
+<app-navbar (onScrollContact)="scrollToContact = true"></app-navbar>
 <app-layout-content>
   <router-outlet></router-outlet>
 </app-layout-content>
-<app-footer></app-footer>
+<app-footer [(scrollToContact)]="scrollToContact"></app-footer>

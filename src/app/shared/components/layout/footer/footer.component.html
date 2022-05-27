@@ -9,18 +9,32 @@
   </div>
   <div class="footer-container__form">
     <div class="mb-2">Recibe noticias</div>
-    <div class="input-group mb-3">
-      <button type="button" class="btn btn-light">Suscribirse</button>
+    <div class="input-group">
+      <button
+        type="button"
+        class="btn btn-light"
+        [disabled]="email.invalid"
+        (click)="onSubscribe()"
+      >
+        Suscribirse
+      </button>
       <input
         type="email"
         class="form-control btn-light"
         placeholder="Correo electrónico"
-        aria-label="Username"
-        aria-describedby="basic-addon1"
+        aria-label="correo"
+        aria-describedby="correo"
+        [formControl]="email"
       />
     </div>
+    <small *ngIf="!(email.invalid && email.touched)" class="pt-2">&nbsp;</small>
+    <small
+      *ngIf="email.invalid && email.touched"
+      class="pt-2 text-danger text-end"
+      >Debe ingresar un correo válido</small
+    >
   </div>
-  <div class="footer-container__contact">
+  <div class="footer-container__contact" #contactRef>
     <div>Contácto</div>
     <div>Sebastian Delgado Gomez</div>
     <div>
@@ -30,8 +44,16 @@
     </div>
     <hr />
     <div class="footer-container__contact__social-media">
-      <span> <i class="fa-brands fa-facebook"></i> </span>
-      <span> <i class="fa-brands fa-instagram"></i> </span>
+      <span>
+        <a
+          href="https://www.facebook.com/profile.php?id=100010430016621"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </span>
+      <span>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </span>
     </div>
   </div>
 </div>

@@ -10,6 +10,7 @@ import { NavbarComponent } from './shared/components/layout/navbar/navbar.compon
 import { FooterComponent } from './shared/components/layout/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { LayoutContentComponent } from './shared/components/layout/layout-content/layout-content.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { LayoutContentComponent } from './shared/components/layout/layout-conten
     FooterComponent,
     LayoutContentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
