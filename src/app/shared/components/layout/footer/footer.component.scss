@@ -37,6 +37,7 @@
       font-weight: 700;
     }
     &__social-media {
+      //   text-align: end;
       span {
         color: white;
         transition: 0.15s ease;
@@ -46,21 +47,20 @@
       span:first-of-type {
         i {
           border-radius: 2px;
-          padding: 2px;
+          padding: 4px;
           background: rgb(131, 131, 131);
         }
         &:hover i {
           color: #4267b2;
           width: fit-content;
           height: fit-content;
-          padding-top: 1px;
           background: #fff;
         }
       }
       span:last-of-type {
         i {
           border-radius: 2px;
-          padding: 2px;
+          padding: 4px;
           background: rgb(131, 131, 131);
         }
         &:hover i {
