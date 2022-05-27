@@ -9,6 +9,7 @@ import { CmsPopularesComponent } from './web/components/cms-populares/cms-popula
 import { NavbarComponent } from './shared/components/layout/navbar/navbar.component';
 import { FooterComponent } from './shared/components/layout/footer/footer.component';
 import { RouterModule } from '@angular/router';
+import { LayoutContentComponent } from './shared/components/layout/layout-content/layout-content.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
     CmsPopularesComponent,
     NavbarComponent,
     FooterComponent,
+    LayoutContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [],
