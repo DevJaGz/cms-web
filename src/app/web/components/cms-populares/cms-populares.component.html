@@ -1,1 +1,15 @@
-<p>cms-populares works!</p>
+<header>
+  <h1 class="text-center">CMS más populares</h1>
+</header>
+<main>
+  <p>A continuación se detallan los CMS más populares.</p>
+  <div class="container-card">
+    <app-card
+      [title]="card.title"
+      [description]="card.description"
+      [image]="card.image"
+      [url]="card.url"
+      *ngFor="let card of cardsContent"
+    ></app-card>
+  </div>
+</main>

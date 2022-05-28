@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/components/layout/footer/footer.compon
 import { RouterModule } from '@angular/router';
 import { LayoutContentComponent } from './shared/components/layout/layout-content/layout-content.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     LayoutContentComponent,
+    CardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule, ReactiveFormsModule],
   providers: [],
