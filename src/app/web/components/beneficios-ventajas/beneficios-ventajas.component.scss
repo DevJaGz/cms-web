@@ -1,0 +1,31 @@
+strong {
+  font-weight: bold;
+}
+
+ol > li {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+ul > li {
+  list-style-type: disc;
+}
+.p {
+  padding: 10px 0 20px 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+
+  h1 {
+    width: 450px;
+  }
+}
+
+main {
+  margin-top: 80px;
+}
